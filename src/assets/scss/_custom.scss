@@ -1,0 +1,37 @@
+header {
+	height: 20vh;
+	padding:5%;	
+	@include breakpoint (medium) { 
+		padding:5%;
+		height: 10vh;
+	}
+	
+}
+
+h1, h2, h3 {
+	font-weight:700;
+	line-height: 1.2;
+	font-family: 'Libre Franklin', sans-serif;
+}
+
+p { 
+	font-size: 18px;  
+	@include breakpoint (medium) { font-size: 21px;  }
+	}
+
+
+#hero {
+	background: $black;
+	color:$white;
+	height:80vh;
+	@include breakpoint (medium) { height: 90vh; }
+	h2 {
+		font-size: 24px;  
+		@include breakpoint (medium) { font-size: 54px;  }
+		}
+}
+
+#content {
+	padding:5%;
+	li { list-style-type: square; }
+}
